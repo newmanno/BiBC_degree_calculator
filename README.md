@@ -2,7 +2,8 @@
 Calculates BiBC and degree of nodes from a pickled networkx file
 
 Bipartite Betweenness Centrality (BiBC) is a node property that is an extension of betweenness centrality. In BiBC, the betweenness centrality is calculated between
-two distinct groups of nodes, and each node is scored based on the number of times it appears on the shortest path between each pair of nodes in both node groups.
+two distinct groups of nodes, and each node is scored based on the number of times it appears on the shortest path between each pair of nodes in both node groups. Thus,
+it is a measure of the 'bottleneck-ness' of a node. A node with a high BiBC indicates the node could play a key mediatory role between the interaction of the two groups.
 
 Required (positional) arguments:
 - pickle: The pickle file created with import_network_data.py
